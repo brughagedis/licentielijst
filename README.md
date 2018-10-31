@@ -8,4 +8,6 @@ URL: https://datatables.net/
 Daarnaast moet ook de Editor extension worden aangeschaft.
 https://editor.datatables.net/
 
+Requires PHP 5.3+
+Supports PHP 7
 
