@@ -13,6 +13,6 @@ Download het pakket, pak het uit en plaats het ergens op de server en hernoem he
 Requires PHP 5.3+
 Supports PHP 7
 
-Voor het login script is het volgedne scriopt gebruikt:
+Het login script is te vinden op:
 https://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL
 
