@@ -1,18 +1,19 @@
 # licentielijst
-Initiële readme file voor project licentielijst
+Eenvoudig systeem voor bibliotheken om aan te geven materiaal uit hun licenties opgeionmen kan worden in een VLE, zoals Canvas of Blackboard. 
+Ene werkende versie kan worden bekeken op de volgende url:
+http://uba.uva.nl/diensten/voor-het-onderwijs/readers-online/licentielijst.html
 
 Vereisten: 
-Werkende installatie van de Datatables plug-in voor jQuery.
+PHP 5.3+
+MySQL 5.1+
+
+Datatables plug-in voor jQuery
 URL: https://datatables.net/
-Download het pakket incl. buttons, jquery 3 en bootstrap 3.
+Download het pakket incl. bootstrap, buttons, jquery, responive en select packages.
 
-Daarnaast moet ook de Editor extension worden aangeschaft.
+Editor extension voor Datatables.
 https://editor.datatables.net/
-Download het pakket, pak het uit en plaats het ergens op de server en hernoem het naar "Editor".
 
-Requires PHP 5.3+
-Supports PHP 7
-
-Het login script is te vinden op:
+Voor het login gedeelte is gebruik gemaakt van het script op de volgende url:
 https://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL
 
