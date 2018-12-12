@@ -43,7 +43,6 @@
       <link rel="stylesheet" type="text/css" href="/licentielijstmap/DataTables/Bootstrap-3.3.7/css/bootstrap.min.css" >
       <link rel="stylesheet" type="text/css" href="/licentielijstmap/Editor/css/editor.bootstrap.min.css">
       <link rel="stylesheet" href="../css/new.css" type="text/css"/>
-      <link rel="stylesheet" href="../css/menustyles.css">
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <script src="/licentielijstmap/DataTables/Bootstrap-3.3.7/js/bootstrap.min.js"></script> 
       <script type="text/javascript" src="/licentielijstmap/DataTables/Datatables-1.10.18/js/jquery.dataTables.min.js"></script>
@@ -170,7 +169,6 @@
       <a class="btn btn-default" href="ebooks_eng.php" role="button">e-books List</a>
       <a class="btn btn-default active" href="publishersplatforms.php" role="button">Publishers & Platforms</a>
       <?php if ($logged == 'in'){
-         // echo "<li><a href=\"admin/adminlijst.php\" class=\"back\">Bewerk SURFlijst</a></li> ";
           ?>
       <a class="btn btn-default" href="admin/adminlijst.php" role="button">Bewerk Licentielijst</a>
       <a class="btn btn-default" href="admin/adminebooks.php" role="button">Bewerk e-books-lijst</a>
