@@ -14,7 +14,7 @@ Download het pakket incl. bootstrap, buttons, jquery, responive en select packag
 Editor extension voor Datatables.
 https://editor.datatables.net/
 
-Voor het login gedeelte is gebruik gemaakt van het script op de volgende url:
+Voor het login gedeelte is gebruik gemaakt van het script op de volgende website:
 https://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL
 
 Voor installatie aanwijzingen zie de Wiki: https://github.com/brughagedis/licentielijst/wiki/How-to-build-the-licentielijst
