@@ -1,5 +1,5 @@
 # licentielijst
-Eenvoudig systeem voor bibliotheken om aan te geven materiaal uit hun licenties opgeionmen kan worden in een VLE, zoals Canvas of Blackboard. 
+Eenvoudig systeem voor bibliotheken om aan te geven materiaal uit hun licenties opgenomen kan worden in een VLE, zoals Canvas of Blackboard. 
 Ene werkende versie kan worden bekeken op de volgende url:
 http://uba.uva.nl/diensten/voor-het-onderwijs/readers-online/licentielijst.html
 
