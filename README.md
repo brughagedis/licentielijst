@@ -17,4 +17,4 @@ https://editor.datatables.net/
 Voor het login gedeelte is gebruik gemaakt van het script op de volgende url:
 https://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL
 
-Voor installatie aanwijzingen zie de Wiki: https://github.com/brughagedis/licentielijst
+Voor installatie aanwijzingen zie de Wiki: https://github.com/brughagedis/licentielijst/wiki/How-to-build-the-licentielijst
