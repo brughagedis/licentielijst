@@ -1,0 +1,168 @@
+/* CSS Document */
+body{
+  height: 100%;
+  padding: 0;
+  border: none;
+}
+
+html{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+table#wrapper{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background-color: #FFF;
+  border: none;
+  width: 1100px;;
+}
+
+
+ table td#td_navigatie #MainMenu{
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+  margin-top: 15px;
+}
+
+p{
+  font-size: 100%;
+  max-width: 800px;
+}
+
+#advsearch{
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+
+
+h1, h2, h3, h4, p {
+    margin: 6px 0;
+}
+
+ul > li,
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+label {
+    cursor: pointer;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: middle;
+}
+button, input {
+    line-height: normal;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+body {
+	margin: 0px; line-height: 20px; font-size: 15px;
+}
+
+a {
+	color: rgb(153, 153, 153); text-decoration: underline;
+}
+
+label {
+	cursor: pointer;
+}
+
+button {
+	margin: 0px; font-size: 100%; vertical-align: baseline;
+}
+input {
+	margin: 0px; font-size: 100%; vertical-align: baseline;
+}
+select {
+	margin: 0px; font-size: 100%; vertical-align: baseline;
+}
+textarea {
+	margin: 0px; font-size: 100%; vertical-align: baseline;
+}
+button {
+	line-height: normal;
+}
+input {
+	line-height: normal;
+}
+table button {
+	
+}
+table input {
+	
+}
+button {
+	cursor: pointer; -webkit-appearance: button;
+}
+
+table {
+	width: 100%; border-collapse: collapse; border-spacing: 0;
+}
+
+td {
+	padding: 5px 0px; text-align: left; vertical-align: top; border-bottom-color: rgb(219, 219, 219); border-bottom-width: 2px;
+}
+th {
+	padding: 5px 0px; text-align: left; vertical-align: top; border-bottom-color: rgb(219, 219, 219); border-bottom-width: 2px;
+}
+
+
+h3 {
+	line-height: 20px; font-size: 18px;
+}
+
+input[type='search'] {
+	height: 30px;
+  Vertical-align: bottom
+}
+
+input[type='search'] {
+	padding: 0px 10px; border: 0px solid rgb(153, 153, 153); border-image: none; color: rgb(255, 255, 255); background-color: rgb(153, 153, 153); -webkit-tap-highlight-color: #999; -webkit-user-modify: read-write-plaintext-only;
+}
+
+button {background: url("../images/magnifying_glass.png") margin: 0px 0px; padding: 0px; border-radius: 0px;border: 0px solid rgb(153, 153, 153) 
+}
+
+#search input[type='search'] {
+	width: 350px; 
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding : 0px;
+    margin-left: 0px;
+    display: inline;
+    border: 0px;
+
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    border: 0px;
+}
+
+
+    
