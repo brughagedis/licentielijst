@@ -20,14 +20,14 @@
       <meta charset="utf-8">
       <title>e-books List</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
-      <link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+
       <style type="text/css" class="init"> 
          td.details-control {
-         background: url('../images/details_open.png') no-repeat center center; 
+         background: url('images/details_open.png') no-repeat center center; 
          cursor: pointer;
          } 
          tr.details td.details-control {
-         background: url('../images/details_close.png') no-repeat center center;
+         background: url('images/details_close.png') no-repeat center center;
          }
          .left {
          position: absolute;
@@ -35,24 +35,24 @@
          .dataTables_filter input { width: 350px }
          }
       </style>
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/DataTables/datatables.css">     
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/Editor/css/editor.dataTables.css">   
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/DataTables/DataTables-1.10.18/css/jquery.dataTables.min.css">  
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/DataTables/Buttons-1.5.4/css/buttons.dataTables.min.css">
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/DataTables/Select-1.2.6/css/select.dataTables.min.css">      
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/DataTables/Bootstrap-3.3.7/css/bootstrap.min.css" >
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/Editor/css/editor.bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="../DataTables/datatables.css">     
+      <link rel="stylesheet" type="text/css" href="../Editor/css/editor.dataTables.css">   
+      <link rel="stylesheet" type="text/css" href="../DataTables/DataTables-1.10.18/css/jquery.dataTables.min.css">  
+      <link rel="stylesheet" type="text/css" href="../DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="../DataTables/Buttons-1.5.4/css/buttons.dataTables.min.css">
+      <link rel="stylesheet" type="text/css" href="../DataTables/Select-1.2.6/css/select.dataTables.min.css">      
+      <link rel="stylesheet" type="text/css" href="../DataTables/Bootstrap-3.3.7/css/bootstrap.min.css" >
+      <link rel="stylesheet" type="text/css" href="../Editor/css/editor.bootstrap.min.css">
       <link rel="stylesheet" href="css/new.css" type="text/css"/>
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-      <script src="/licentielijstmap/DataTables/Bootstrap-3.3.7/js/bootstrap.min.js"></script> 
-      <script type="text/javascript" src="/licentielijstmap/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
-      <script type="text/javascript" src="/licentielijstmap/DataTables/DataTables-1.10.18/js/dataTables.bootstrap.min.js"></script>
-      <script type="text/javascript" src="/licentielijstmap/DataTables/Buttons-1.5.4/js/dataTables.buttons.min.js"></script>
-      <script type="text/javascript" src="/licentielijstmap/DataTables/Select-1.2.6/js/dataTables.select.min.js"></script>
-      <script type="text/javascript" src="/licentielijstmap/Editor/js/dataTables.editor.min.js"></script>
-      <script type="text/javascript" src="/licentielijstmap/Editor/js/editor.bootstrap.min.js"></script>
+      <script src="../DataTables/Bootstrap-3.3.7/js/bootstrap.min.js"></script> 
+      <script type="text/javascript" src="../DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+      <script type="text/javascript" src="../DataTables/DataTables-1.10.18/js/dataTables.bootstrap.min.js"></script>
+      <script type="text/javascript" src="../DataTables/Buttons-1.5.4/js/dataTables.buttons.min.js"></script>
+      <script type="text/javascript" src="../DataTables/Select-1.2.6/js/dataTables.select.min.js"></script>
+      <script type="text/javascript" src="../Editor/js/dataTables.editor.min.js"></script>
+      <script type="text/javascript" src="../Editor/js/editor.bootstrap.min.js"></script>
       <script src="js/menuscript.js"></script>   
       <script type="text/javascript" class="init">
          var editor; 
@@ -86,16 +86,20 @@
          				"targets": 1}
           ,
              { "render": function (data, type, row) {
-               if ( data === 'Ja' ){ return '<img src="../images/yes.png">';
+               if ( data === 'Ja' ){ return '<img src="images/yes.png">';
                } else if ( data === 'Nee' )
-               { return '<img src="../images/no.png">';
+               { return '<img src="images/no.png">';
                }
                
           },
-          "targets": [7,8,9]
+          "targets": [7,8]
            },
                  {"visible": false,
-         "targets": [ 4,6 ]}
+         "targets": [ 4,6 ]},
+                    {
+        targets: [7,8],
+        className: 'dt-center'
+    }
          
                ],
             columns: [
@@ -111,7 +115,6 @@
                  { data: "ebookslijst.url" },
                  { data: "uitgeverplatform.uitgeverplatform" },
                  { data: "ebookslijst.zoekveld" },
-                 { data: "uitgeverplatform.linkingincanvas" },
                  { data: "uitgeverplatform.pdfincanvas" },
                  { data: "uitgeverplatform.inprintreader"}
          		],
@@ -180,7 +183,16 @@
       <script src="dist/js/bootstrap.min.js">
          <script src="js/menuscript.js">
       </script> 
-      
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         
+         ga('create', 'UA-20266439-2', 'auto');
+         ga('send', 'pageview');
+         
+      </script>
    </head>
    <body>
       <div id="advsearch">
@@ -190,8 +202,10 @@
                <td id="tekst" >
                   
                      <h3>e-books List</h3>
-                     <P> This list includes all e-books to which the Library has a license and shows whether <img src = "images/yes.png" alt = "yes"> or <img src ="images/no.png "alt ="no"> articles or chapters may be included within readers or Canvas. <br>
-                        Ensure that downloaded material is removed at the end of the academic year.</ p>
+                      <p>This list shows all e-books that are accessible via the Library of the UvA. The symbols <img src = "images/yes.png" alt = "yes"> (yes) or <img src = "images/no.png" alt = "no"> (not) indicate whether per e-book more than 50 pages&apos;s and / or more than 25% digital may be included in <i> Canvas </i>, an e-reader or a printed reader. <br> You may only offer this material during the module. </p>
+
+                     <p>Scroll to the bottom of the page to navigate to the lists of e-journals and publishers & platforms. </p>
+                     
                          </td>
                          </tr>
                          <tr>
@@ -216,14 +230,13 @@
                               <th>URL</th>
                               <th>Publisher or Platform</th>
                               <th>Search field</th>
-                              <th>Linking in Canvas and E-reader</th>
-                              <th>PDF on Canvas and E-reader</th>
-                              <th>Inclusion in print reader</th>
+                              <th>Digital inclusion</th>
+                              <th>Printed inclusion</th> 
                            </tr>
                         </thead>
                         <tbody>
                            <tr>
-                              <td colspan="8" class="dataTables_empty">Downloading e-books data from server.</td>
+                              <td colspan="9" class="dataTables_empty">Downloading e-books data from server.</td>
                            </tr>
                         </tbody>
                         <tfoot>
@@ -235,9 +248,8 @@
                               <th>URL</th>
                               <th>Publisher or Platform</th>
                               <th>Search field</th>
-                              <th>Linking in Canvas and E-reader</th>
-                              <th>PDF on Canvas and E-reader</th>
-                              <th>Inclusion in print reader</th>
+                              <th>Digital inclusion</th>
+                              <th>Printed inclusion</th> 
                            </tr>
                         </tfoot>
                      </table>
