@@ -19,12 +19,11 @@ use
 // Build our Editor instance and process the data coming from _POST
 Editor::inst( $db, 'tijdschriftenlijst' )
 	->field(
-        Field::inst( 'tijdschriftenlijst.publication_title' ),
+        	Field::inst( 'tijdschriftenlijst.publication_title' ),
 		Field::inst( 'tijdschriftenlijst.issn' ),
 		Field::inst( 'tijdschriftenlijst.beschikbaarheid' ),
 		Field::inst( 'tijdschriftenlijst.url' ),	
-        Field::inst( 'tijdschriftenlijst.zoekveld' ),
-        Field::inst( 'uitgeverplatform.linkingincanvas' ),
+        	Field::inst( 'tijdschriftenlijst.zoekveld' ),
 		Field::inst( 'uitgeverplatform.uitgeverplatform' ),
 		Field::inst( 'uitgeverplatform.pdfincanvas' ),
 		Field::inst( 'uitgeverplatform.inprintreader' )
