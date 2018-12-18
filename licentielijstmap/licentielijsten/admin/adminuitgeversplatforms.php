@@ -20,7 +20,7 @@
       <meta charset="utf-8">
       <title>Bewerk lijst uitgevers en platforms</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
-      <link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+
       <style type="text/css" class="init"> 
          td.details-control {
          background: url('../images/details_open.png') no-repeat center center; 
@@ -35,23 +35,23 @@
          .dataTables_filter input { width: 350px }
          }
          </style>
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/DataTables/datatables.css">     
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/Editor/css/editor.dataTables.css">   
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/DataTables/DataTables-1.10.18/css/jquery.dataTables.min.css">  
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/DataTables/Buttons-1.5.4/css/buttons.dataTables.min.css">
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/DataTables/Select-1.2.6/css/select.dataTables.min.css">      
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/DataTables/Bootstrap-3.3.7/css/bootstrap.min.css" >
-      <link rel="stylesheet" type="text/css" href="/licentielijstmap/Editor/css/editor.bootstrap.min.css">
-      <link rel="stylesheet" href="../css/new.css" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../DataTables/datatables.css">     
+      <link rel="stylesheet" type="text/css" href="../../Editor/css/editor.dataTables.css">   
+      <link rel="stylesheet" type="text/css" href="../../DataTables/DataTables-1.10.18/css/jquery.dataTables.min.css">  
+      <link rel="stylesheet" type="text/css" href="../../DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="../../DataTables/Buttons-1.5.4/css/buttons.dataTables.min.css">
+      <link rel="stylesheet" type="text/css" href="../../DataTables/Select-1.2.6/css/select.dataTables.min.css">      
+      <link rel="stylesheet" type="text/css" href="../../DataTables/Bootstrap-3.3.7/css/bootstrap.min.css" >
+      <link rel="stylesheet" type="text/css" href="../../Editor/css/editor.bootstrap.min.css">
+      <link rel="stylesheet" href="../css/new.css" type="text/css">
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-      <script src="/licentielijstmap/DataTables/Bootstrap-3.3.7/js/bootstrap.min.js"></script> 
-      <script type="text/javascript" src="/licentielijstmap/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
-      <script type="text/javascript" src="/licentielijstmap/DataTables/DataTables-1.10.18/js/dataTables.bootstrap.min.js"></script>
-      <script type="text/javascript" src="/licentielijstmap/DataTables/Buttons-1.5.4/js/dataTables.buttons.min.js"></script>
-      <script type="text/javascript" src="/licentielijstmap/DataTables/Select-1.2.6/js/dataTables.select.min.js"></script>
-      <script type="text/javascript" src="/licentielijstmap/Editor/js/dataTables.editor.min.js"></script>
-      <script type="text/javascript" src="/licentielijstmap/Editor/js/editor.bootstrap.min.js"></script>  
+      <script src="../../DataTables/Bootstrap-3.3.7/js/bootstrap.min.js"></script> 
+      <script type="text/javascript" src="../../DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+      <script type="text/javascript" src="../../DataTables/DataTables-1.10.18/js/dataTables.bootstrap.min.js"></script>
+      <script type="text/javascript" src="../../DataTables/Buttons-1.5.4/js/dataTables.buttons.min.js"></script>
+      <script type="text/javascript" src="../../DataTables/Select-1.2.6/js/dataTables.select.min.js"></script>
+      <script type="text/javascript" src="../../Editor/js/dataTables.editor.min.js"></script>
+      <script type="text/javascript" src="../../Editor/js/editor.bootstrap.min.js"></script>  
       <script type="text/javascript" class="init">
          var editor; 
          
@@ -125,13 +125,19 @@
                { return '<img src="../images/no.png">';
                }
           },
-          "targets": [2,3,4]}
+          "targets": [2,3]},
+          {
+        targets: [2,3],
+        className: 'dt-center'
+    }  
+          
+          
+          
          ],
          
             columns: [	
                { data: "uitgeverplatform" },
                { data: "type" },
-               { data: "linkingincanvas" },
                { data: "pdfincanvas" },
                { data: "inprintreader" }
          		],
@@ -170,7 +176,16 @@
          } );        
          	
       </script>
-      
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         
+         ga('create', 'UA-20266439-2', 'auto');
+         ga('send', 'pageview');
+         
+      </script>
    </head>
    <body>
      <div id="advsearch">
@@ -188,35 +203,33 @@
                            <td>
                               <div id="search">
                                  <div class="search-box">
-                                    <input name="q" id= "zoekveld" value="" type="search" autocomplete="off"  placeholder="Zoek..."/><button id="magnifying_glass"><img src="images/magnifying_glass.png" width="30" height="30" border="0"></button>
+                                    <input name="q" id= "zoekveld" value="" type="search" autocomplete="off"  placeholder="Zoek..."/><button id="magnifying_glass"><img src="../images/magnifying_glass.png" width="30" height="30" border="0"></button>
                                  </div>
                               </div>
                      </td>
                         </tr>
                      </table>
-                     <div class="table">
+                     <div class="table" id="advsearch">
                         <table id="uitgeverplatformlijst" class="display responsive wrap" cellspacing="0" width="100%">
                            <thead>
                               <tr>
                                  <th>Uitgever / platform</th>
                                  <th>Type</th>
-                                 <th>Linking in Canvas</th>
-                                 <th>Pdf in Canvas</th>
-                                 <th>In geprinte reader</th>
+                                 <th>Digitale overname</th>
+                                 <th>Gedrukte overname</th>
                               </tr>
                            </thead>
                            <tbody>
                               <tr>
-                                 <td colspan="5" class="dataTables_empty">Downloaden van gegevens over de uitgevers en platforms van de server.</td>
+                                 <td colspan="4" class="dataTables_empty">Downloaden van gegevens over de uitgevers en platforms van de server.</td>
                               </tr>
                            </tbody>
                            <tfoot>
                               <tr>
                                  <th>Uitgever / platform</th>
                                  <th>Type</th>
-                                 <th>Linking in Canvas</th>
-                                 <th>Pdf in Canvas</th>
-                                 <th>In geprinte reader</th>
+                                 <th>Digitale overname</th>
+                                 <th>Gedrukte overname</th>
                               </tr>
                            </tfoot>
                         </table>
@@ -237,7 +250,6 @@
             <a class="btn btn-default" href="../ebooks.php" role="button">E-books-lijst</a>
             <a class="btn btn-default" href="../uitgeversplatforms.php" role="button">Uitgevers / platforms</a>
             <?php if ($logged == 'in'){
-               // echo "<li><a href=\"admin/adminlijst.php\" class=\"back\">Bewerk SURFlijst</a></li> ";
                 ?>
             <a class="btn btn-default" href="adminlijst.php" role="button">Bewerk Licentielijst</a>
             <a class="btn btn-default" href="adminebooks.php" role="button">Bewerk e-books-lijst</a>
@@ -252,7 +264,7 @@
             </div></div>
             </td> 
             </tr>
-            </div></div></div>
+            </div>
          </tbody>
       </table>
    </body>
