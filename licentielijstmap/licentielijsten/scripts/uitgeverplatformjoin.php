@@ -20,7 +20,6 @@ use
 Editor::inst( $db, 'uitgeverplatform' )
 ->field(
 Field::inst( 'uitgeverplatform' ),
-Field::inst( 'linkingincanvas' ),
 Field::inst( 'pdfincanvas' ),
 Field::inst( 'inprintreader' )
 )
