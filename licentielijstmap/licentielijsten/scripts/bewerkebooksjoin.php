@@ -35,7 +35,6 @@ Editor::inst( $db, 'ebookslijst' )
         Field::inst( 'uitgeverplatform.uitgeverplatform' ),
         Field::inst( 'ebookslijst.year' ),	
         Field::inst( 'ebookslijst.zoekveld' ),	
-		Field::inst( 'uitgeverplatform.linkingincanvas' ),
 		Field::inst( 'uitgeverplatform.pdfincanvas' ),
 		Field::inst( 'uitgeverplatform.inprintreader' )
     )
