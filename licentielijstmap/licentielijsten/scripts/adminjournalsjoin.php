@@ -35,7 +35,6 @@ Editor::inst( $db, 'tijdschriftenlijst' )
           ->validator( Validate::dbValues() ),
        Field::inst( 'tijdschriftenlijst.zoekveld' ),
         Field::inst( 'uitgeverplatform.uitgeverplatform' ),
-		Field::inst( 'uitgeverplatform.linkingincanvas' ),
 		Field::inst( 'uitgeverplatform.pdfincanvas' ),
 		Field::inst( 'uitgeverplatform.inprintreader' )
     )
